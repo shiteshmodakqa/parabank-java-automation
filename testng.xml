@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParaBank Automation Suite" parallel="false">
+	<listeners>
+		<listener class-name="com.parabank.listeners.TestListener"/>
+	</listeners>
+	<test name="ParaBank Hybrid Tests">
+		<classes>
+			<class name="com.parabank.tests.ScenarioATest"/>
+			<class name="com.parabank.tests.ScenarioBTest"/>
+			<class name="com.parabank.tests.ScenarioCTest"/>
+		</classes>
+	</test>
+</suite>
